@@ -11,6 +11,8 @@ import Home from './pages/Home'
 import Article from './pages/Article'
 import FormArticle from './pages/FormArticle'
 
+import Login from './pages/Login'
+
 function App() {
   // const articles = [
   //   {
@@ -42,6 +44,7 @@ function App() {
           <NavLink to="/about">About</NavLink>
           <NavLink to="/contact">Contact</NavLink>
           <NavLink to="/new">New Article</NavLink>
+          <NavLink to="/login">Logout</NavLink>
         </nav>
 
         <Routes>
@@ -50,6 +53,7 @@ function App() {
           <Route path="/contact" element={<Contact /> }/>
           <Route path="/articles/:urlId" element={<Article/> }/>
           <Route path="/new" element={<FormArticle /> }/>
+          <Route path="/login" element={<Login /> }/>x
           <Route path="/*" element={<Navigate to="/"/> }/>
         </Routes>
 

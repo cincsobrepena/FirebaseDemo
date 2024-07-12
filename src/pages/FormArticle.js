@@ -28,7 +28,7 @@ export default function Create() {
 
   return (
     <div className="create">
-      <h2 className="page-title">Add a New Recipe</h2>
+      <h2 className="page-title">Add a New Article</h2>
       <form onSubmit={handleSubmit}>
 
         <label>
